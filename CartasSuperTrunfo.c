@@ -28,55 +28,57 @@ int main() {
 
   // Área para entrada de dados
  // Entrada de dados carta 1
+ printf("Cadastro  Carta 1:\n");
+    printf("Digite o Estado (A-H): ");
+    scanf(" %c", &estado1);
 
-printf("cadastro carta 1:\n");
-printf("Digite o estado (A-H):");
-scanf("%c",&estado1);
+    printf("Digite o Codigo da Carta (ex: A01): ");
+    scanf("%s", codigo1);
 
-printf("Digite o código da carta (ex:A01):\n");
-scanf("%s",codigo1);
+    printf("Digite o Nome da Cidade: ");
+    scanf(" %[^\n]", cidade1); // permite ler com espaços
 
-printf("Digite a cidade: \n");
-scanf("%s",&cidade1);
+    printf("Digite a Populacao: ");
+    scanf("%d", &populacao1);
 
-printf("digite a população:\n");
-scanf("%d",&populacao1);
+    printf("Digite a Area (em km2): ");
+    scanf("%f", &area1);
 
-printf("Digite a área em(km²):\n ");
-scanf("%f",&area1);
+    printf("Digite o PIB (em bilhoes de reais): ");
+    scanf("%f", &pib1);
 
-printf("Digite o PIB (em Bilhões de Reais): \n");
-scanf("%f",&pib1);
+    printf("Digite o Numero de Pontos Turisticos: ");
+    scanf("%d", &pontosTuristicos1);
 
-printf("Digite a quantidade de pontos turísticos: \n");
-scanf("%f",&pontosTuristicos1);
+    printf("\n---------------------------------\n");
 
-//Entrada de dados carta2
-printf("\ncadastro carta 2:\n");
-printf("Digite o estado (A-H):");
-scanf("%c",&estado2);
+    // Entrada de dados da Carta 2
+    printf("Cadastro da Carta 2:\n");
+    printf("Digite o Estado (A-H): ");
+    scanf(" %c", &estado2);
 
-printf("Digite o código da carta (ex:B01):\n");
-scanf("%s",&codigo2);
+    printf("Digite o Codigo da Carta (ex: B02): ");
+    scanf("%s", codigo2);
 
-printf("Digite a cidade: \n");
-scanf("%s",&cidade2);
+    printf("Digite o Nome da Cidade: ");
+    scanf(" %[^\n]", cidade2);
 
-printf("digite a população:\n");
-scanf("%d",&populacao2);
+    printf("Digite a Populacao: ");
+    scanf("%d", &populacao2);
 
-printf("Digite a área em (km²):\n)");
-scanf("%f",&area2);
+    printf("Digite a Area (em km2): ");
+    scanf("%f", &area2);
 
-printf("Digite o PIB (Em bilhões de Reais): \n");
-scanf("%f",&pib2);
+    printf("Digite o PIB (em bilhoes de reais): ");
+    scanf("%f", &pib2);
 
-printf("Digite a quantidade de pontos turísticos: \n");
-scanf("%f",&pontosTuristicos2);
+    printf("Digite o Numero de Pontos Turisticos: ");
+    scanf("%d", &pontosTuristicos2);
+
 
 
   // Área para exibição dos dados da cidade
- printf("\n======= CARTA 1 =======\n");
+ printf("\nCARTA 1 \n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
@@ -85,7 +87,7 @@ scanf("%f",&pontosTuristicos2);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
 
-    printf("\n======= CARTA 2 =======\n");
+    printf("\nCARTA 2\n");
     printf("Estado: %c\n", estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
